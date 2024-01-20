@@ -1,0 +1,35 @@
+server:
+  port: 8081
+  servlet:
+    context-path: /test
+
+spring:
+  application:
+    name: test
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: "*"
+    health:
+      show-details: always
+
+info:
+  application:
+    name:   test
+    server:
+      port: 8081
+      servlet:
+        context-path: /test
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8762/eureka/
+    enabled: true
+
