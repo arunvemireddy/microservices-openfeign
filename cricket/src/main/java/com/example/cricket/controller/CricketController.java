@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class CricketController {
 
     @GetMapping(path = "/cricInfo")
-    private ResponseEntity<?> cricInfo(){
-        return new ResponseEntity<>("Welcome to Cricket App",HttpStatus.OK);
+    private ResponseEntity<?> cricInfo() {
+        return new ResponseEntity<>("Welcome to Cricket App", HttpStatus.OK);
     }
 
 
